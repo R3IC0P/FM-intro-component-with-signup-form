@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vmin;
+    padding: 1rem;
     font-size: 16px;
     font-family: "Poppins";
     color: var(--color-text-primary);
@@ -51,10 +52,6 @@ body {
     background-size: cover;
     background-image: url("./images/bg-intro-mobile.png");
     animation: animateBackground 10s infinite ease-in-out;
-}
-
-.page {
-    padding: 1rem;
 }
 
 .main {
@@ -166,14 +163,16 @@ body {
     color: var(--color-primary);
 }
 
-.attribution {
+footer {
     margin-top: 2rem;
     font-size: 11px;
     text-align: center;
 }
-.attribution a {
+footer a {
     color: hsl(228, 45%, 44%);
 }
+
+/* DESKTOP STYLES */
 
 @media (min-width: 1280px) {
     #animated-background {
