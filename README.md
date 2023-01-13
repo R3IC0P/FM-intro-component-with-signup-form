@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [GitHub Repository](https://github.com/R3IC0P/FM-intro-component-with-signup-form)
--   Live Site URL: [Live Preview](https://your-live-site-url.com)
+-   Live Site URL: [Live Preview](https://r3ic0p.github.io/FM-intro-component-with-signup-form/)
 
 ## My process
 
