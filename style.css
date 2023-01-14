@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vmin;
+    min-height: 100vh;
     padding: 1rem;
     font-size: 16px;
     font-family: "Poppins";
@@ -54,45 +54,45 @@ body {
     animation: animateBackground 10s infinite ease-in-out;
 }
 
-.main {
+.intro {
     max-width: 40rem;
 }
 
-.intro__details {
+.intro__header {
     text-align: center;
     font-size: 1.5rem;
 }
 
-.intro__details--description {
+.intro__description {
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.intro__sign-up {
+.intro__content {
     margin-top: 3rem;
 }
 
-.intro__sign-up--banner {
+.intro__banner {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     text-align: center;
     background-color: var(--color-accent);
 }
 
-.intro__sign-up--form {
+.intro__form {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--color-text-primary);
 }
 
-.intro__sign-up--form__item {
+.intro__form-item {
     position: relative;
 }
 
-.intro__sign-up--form__item > input,
-.intro__sign-up--form__item > button[type="submit"] {
+.intro__form-item > input,
+.intro__form-item > button[type="submit"] {
     width: 100%;
     margin: 0.5rem 0;
     padding: 1rem;
@@ -102,17 +102,17 @@ body {
     font-weight: 600;
 }
 
-.intro__sign-up--form__item .is-invalid {
+.intro__form-item .is-invalid {
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
     -webkit-text-fill-color: var(--color-primary);
 }
 
-.intro__sign-up--form__item > .invalid-info {
+.intro__form-item > .invalid-info {
     display: none;
 }
 
-.intro__sign-up--form__item .is-invalid ~ .invalid-info {
+.intro__form-item .is-invalid ~ .invalid-info {
     position: relative;
     display: block;
     text-align: right;
@@ -121,7 +121,7 @@ body {
     color: var(--color-primary);
 }
 
-.intro__sign-up--form__item .is-invalid ~ .invalid-info::before {
+.intro__form-item .is-invalid ~ .invalid-info::before {
     content: "";
     position: absolute;
     top: -2.5rem;
@@ -134,7 +134,7 @@ body {
     background-image: url("./images/icon-error.svg");
 }
 
-.intro__sign-up--form__item > button[type="submit"] {
+.intro__form-item > button[type="submit"] {
     border: none;
     letter-spacing: 0.125rem;
     font-weight: 700;
@@ -144,12 +144,12 @@ body {
     cursor: pointer;
 }
 
-.intro__sign-up--form__item > button[type="submit"]:hover,
-.intro__sign-up--form__item > button[type="submit"]:focus {
+.intro__form-item > button[type="submit"]:hover,
+.intro__form-item > button[type="submit"]:focus {
     background-color: var(--color-secondary-lighter);
 }
 
-.intro__sign-up--form__terms-and-services {
+.intro__terms-and-services {
     margin-top: 1rem;
     padding: 0 1.5rem;
     font-size: 0.6rem;
@@ -157,7 +157,7 @@ body {
     color: var(--color-neutral-light);
 }
 
-.intro__sign-up--form__terms-and-services > a {
+.intro__terms-and-services > a {
     font-weight: 700;
     text-decoration: none;
     color: var(--color-primary);
@@ -168,6 +168,7 @@ footer {
     font-size: 11px;
     text-align: center;
 }
+
 footer a {
     color: hsl(228, 45%, 44%);
 }
@@ -189,9 +190,5 @@ footer a {
     .intro__details {
         text-align: left;
         font-size: 2rem;
-    }
-
-    .intro__details--title {
-        line-height: 3rem;
     }
 }
